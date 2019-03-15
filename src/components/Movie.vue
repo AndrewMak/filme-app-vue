@@ -16,7 +16,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="green" @click="back">back</v-btn>
+            <v-btn flat color="green" @click="back">Voltar</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -26,7 +26,7 @@
       <v-flex xs12>
         <div class="text-xs-center">
           <v-dialog v-model="dialog" width="500">
-            <v-btn slot="activator" color="green" dark>View Ratings</v-btn>
+            <v-btn slot="activator" color="green" dark>Ver Avaliação</v-btn>
             <v-card>
               <v-card-title class="headline grey lighten-2" primary-title>Ratings</v-card-title>
               <v-card-text>
