@@ -69,7 +69,6 @@ let router = new VueRouter({
       component: Admin,
       meta: { 
           requiresAuth: true,
-          is_admin : true
       }
   },
   ],

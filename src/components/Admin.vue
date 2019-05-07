@@ -9,9 +9,26 @@
     export default {
         data () {
             return {
-                msg: 'The superheros'
+                msg: Object
             }
-        }
+        },
+          mounted() {
+    this.$http
+      .get(
+        "http://localhost:50102/api/Accounts/profile", {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'bearer '+ localStorage.getItem('jwt').toString()
+                 }
+                }
+      )
+      .then(response => {
+        this.msg = response.data;
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  },
     }
 </script>
 <style scoped>
