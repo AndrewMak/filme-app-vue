@@ -8,7 +8,7 @@ import SearchMovie from "@/components/SearchMovie";
 import Login from '@/components/Login';
 import Register from '@/components/Register';
 import Admin from '@/components/Admin';
-
+import Posts from '@/components/Posts';
 Vue.use(VueRouter);
 
 let router = new VueRouter({
@@ -29,6 +29,15 @@ let router = new VueRouter({
         }
       
     },
+    {
+        path: "/posts",
+        name: "Posts",
+        component: Posts,
+        meta: { 
+            guest: true
+          }
+        
+      },
     {
       path: '/login',
       name: 'login',

@@ -43,9 +43,7 @@ export default {
         this.wholeResponse = response.data.Search;
         this.loading = false;
       })
-      .catch(error => {
-        console.log(error);
-      });
+      .catch();
   },
   methods: {
     singleMovie(id) {

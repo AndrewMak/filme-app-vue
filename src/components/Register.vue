@@ -79,9 +79,7 @@
                             }
                         }
                     })
-                    .catch(error => {
-                        console.error(error);
-                    });
+                    .catch();
                 } else {
                     this.password = ""
                     this.passwordConfirm = ""

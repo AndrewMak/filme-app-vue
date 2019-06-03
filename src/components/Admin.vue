@@ -25,9 +25,7 @@
       .then(response => {
         this.msg = response.data;
       })
-      .catch(error => {
-        console.log(error);
-      });
+      .catch();
   },
     }
 </script>

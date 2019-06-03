@@ -25,7 +25,7 @@
 
 <script>
 import axios from "axios";
-import { constants } from "fs";
+// import { constants } from "fs";
 export default {
   props: ["name"],
   data() {
@@ -43,9 +43,7 @@ export default {
       .then(response => {
         this.wholeResponse = response.data.Search;
       })
-      .catch(error => {
-        console.log(error);
-      });
+      .catch();
   },
   methods: {
     singleMovie(id) {
